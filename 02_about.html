@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Узнайте о создателе Travel Experts">
+    <title>Об основателе | Travel Experts</title>
+    <link rel="stylesheet" href="04_style.css">
+    <style>
+        /* Стили для страницы "О нас" */
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagesabout-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .founder-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 60px;
+            justify-content: center;
+        }
+        
+        .founder-photo {
+            flex: 1;
+            min-width: 350px;
+            max-width: 500px;
+            position: relative;
+            aspect-ratio: 2898/3864;
+        }
+        
+        .founder-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 10px solid white;
+        }
+        
+        .founder-info {
+            flex: 1;
+            min-width: 350px;
+            max-width: 600px;
+        }
+        
+        .principles-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        
+        .principle-item {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: left;
+            color: #000000; /* Черный цвет текста */
+        }
+        
+        .principle-item h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .principle-item p {
+            color: #000000; /* Черный цвет текста для параграфов */
+        }
+
+        @media (max-width: 900px) {
+            .founder-container {
+                gap: 30px;
+            }
+            .founder-photo {
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .founder-photo {
+                min-width: 280px;
+                max-width: 100%;
+            }
+            .principle-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="01_index.html">Главная</a></li>
+            <li><a href="02_about.html">О нас</a></li>
+            <li><a href="03_contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-hero">
+        <h1>Наша история</h1>
+        <p>С 2024 года мы помогаем путешественникам открывать мир</p>
+    </div>
+
+    <main>
+        <section class="about-section">
+            <h2>Наша миссия</h2>
+            <p>Мы верим, что путешествия должны быть доступными, вдохновляющими и безопасными. Наш основатель лично отбирает каждое место, чтобы вы могли наслаждаться только лучшими впечатлениями.</p>
+            
+            <div class="founder-container">
+                <div class="founder-photo">
+                    <img src="images/founder.jpg" alt="Ибадильдинов Диас, основатель компании" loading="lazy">
+                </div>
+                <div class="founder-info">
+                    <h3>Ибадильдинов Диас</h3>
+                    <p><strong>Основатель и CEO</strong></p>
+                    <p>Диас создал Travel Experts в 2024 году с целью сделать путешествия более осмысленными и персонализированными. С его богатым опытом посещения более 30 стран, он лично проверяет каждую рекомендацию, которую мы публикуем.</p>
+                    <p>"Моя цель - помочь людям открывать мир так, как это делают местные жители, избегая туристических ловушек и находя настоящие жемчужины каждого направления."</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="principles-section">
+            <h2>Наши принципы работы</h2>
+            <div class="principles-list">
+                <div class="principle-item">
+                    <h3>Личный опыт</h3>
+                    <p>Каждое место, которое мы рекомендуем, было лично посещено и проверено основателем компании. Мы не предлагаем направления, в которых не были сами.</p>
+                </div>
+                <div class="principle-item">
+                    <h3>Индивидуальный подход</h3>
+                    <p>Мы тщательно изучаем предпочтения каждого клиента, чтобы предложить маршрут, который идеально соответствует его интересам и бюджету.</p>
+                </div>
+                <div class="principle-item">
+                    <h3>Честные отзывы</h3>
+                    <p>Вы получаете объективную информацию о каждом месте - мы рассказываем не только о плюсах, но и о возможных недостатках.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
